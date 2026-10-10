@@ -52,9 +52,14 @@ see [NOTICE](NOTICE).
 
 ```sh
 npm install
-npm run build
+npm run compile
 npm test
 ```
+
+The build script is named `compile` (not `build`) on purpose: opencode's
+plugin installer cannot prepare a git dependency that declares a
+`build`/`prepare`/`install` script (anomalyco/opencode#49704), and `dist/` is
+committed, so no build runs at install time.
 
 ## License
 
