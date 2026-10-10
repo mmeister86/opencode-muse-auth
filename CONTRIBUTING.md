@@ -7,9 +7,12 @@ and tests are all welcome.
 
 ```bash
 npm ci
-npm run build
+npm run compile
 npm test
 ```
+
+The build script is named `compile` so opencode can git-install this plugin
+(see anomalyco/opencode#49704).
 
 CI repeats the same gate on Node 20, 22, and 24.
 

@@ -4,7 +4,7 @@ What does this PR change and why?
 
 ## How verified
 
-- [ ] `npm run build` passes
+- [ ] `npm run compile` passes
 - [ ] `npm test` passes (Node 20/22/24 via CI)
 - [ ] Added/updated tests for the change
 

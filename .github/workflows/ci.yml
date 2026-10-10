@@ -23,5 +23,8 @@ jobs:
           node-version: ${{ matrix.node }}
           cache: npm
       - run: npm ci
-      - run: npm run build
+      # "compile", not "build": a git-installed plugin that declares a
+      # build/prepare/install script can't be prepared by opencode's bundled
+      # npm (see anomalyco/opencode#49704). Keep the script renamed.
+      - run: npm run compile
       - run: npm test
